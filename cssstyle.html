@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styles Demo</title>
+    <style>
+        /* Embedded CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        .highlight {
+            color: blue;
+            font-weight: bold;
+        }
+        #main-header {
+            text-align: center;
+            color: black;
+            background-color: #e3eec2;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inline styles override embedded styles -->
+    <h1 id="main-header" style="color: gray;">CSS Inline and Embedded Styles</h1>
+    <p class="highlight">This paragraph uses an embedded class style.</p>
+    <p style="color: green; font-style: italic;">This paragraph uses inline styles to override embedded styles.</p>
+</body>
+</html>

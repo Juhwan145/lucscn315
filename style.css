@@ -1,6 +1,4 @@
-/* External CSS (styles.css) */
-
-/* General body styling */
+/* Body styling */
 body {
     text-align: center;
     font-family: Arial, sans-serif;
@@ -43,10 +41,6 @@ a {
     font-weight: bold;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 /* Form styling */
 form {
     margin: 20px auto;
@@ -67,11 +61,6 @@ input[type="submit"] {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: darkred;
 }
 
 /* Footer styling */
@@ -80,14 +69,4 @@ footer {
     padding: 10px;
     background-color: #333;
     color: white;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    section {
-        width: 95%;
-    }
-    form {
-        width: 80%;
-    }
 }

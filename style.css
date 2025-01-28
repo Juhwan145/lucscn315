@@ -70,3 +70,13 @@ footer {
     background-color: #333;
     color: white;
 }
+
+/* ID and Class Styling */
+#name-input {
+    border: 2px dashed darkgreen;
+}
+
+.highlight {
+    font-weight: bold;
+    color: darkblue;
+}

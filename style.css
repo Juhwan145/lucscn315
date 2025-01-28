@@ -73,7 +73,7 @@ footer {
 
 /* ID and Class Styling */
 #name-input {
-    border: 2px darkgreen;
+    border: 4px dashed darkgreen;
 }
 
 .highlight {

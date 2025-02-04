@@ -1,0 +1,63 @@
+:root {
+    --primary-color: #ADC178;
+    --secondary-color: #DDE5B6;
+    --accent-color: #6C584C;
+    --lessaccent-color: #A98467;
+    --background-color: #F0EAD2;
+    --text-color: #333;
+}
+
+/* Style the header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -7px;
+    padding: 15px 100px;
+    height: 60px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.header .logo {
+    display: flex;
+    align-items: center; 
+}
+
+.header .logo img {
+    width: 200px;
+    height: auto;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Style the header link */
+.header a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.header a.active {
+    color: var(--lessaccent-color);
+    border-radius: 10px;
+}
+
+.header a:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 10px;
+}
+
+/* Color Palette
+#F0EAD2
+#DDE5B6
+#ADC178
+#A98467
+#6C584C
+*/

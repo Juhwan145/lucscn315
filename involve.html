@@ -18,7 +18,49 @@
         </nav>
     </div>
 
-    <section>
-        "To Bring Unity to All Things in Heaven and on Earth Under the Christ"
-    </section>
+    <h2>Church Registration Form</h2>
+    <form id="churchForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <br><br>
+
+        <label>Sex:</label>
+        <input type="radio" id="male" name="sex" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="sex" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label>Have you attended a church before?</label><br>
+        <input type="radio" id="churchYes" name="churchAttend" value="Yes" required>
+        <label for="churchYes">Yes</label>
+        <input type="radio" id="churchNo" name="churchAttend" value="No">
+        <label for="churchNo">No</label>
+        <br><br>
+
+        <label>Would you like to serve in a ministry? (Select all that apply)</label><br>
+        <input type="checkbox" id="worshipTeam" name="service" value="Worship Team">
+        <label for="worshipTeam">Worship Team</label>
+        
+        <input type="checkbox" id="welcomeTeam" name="service" value="Welcome Team">
+        <label for="welcomeTeam">Welcome Team</label>
+
+        <input type="checkbox" id="sundaySchool" name="service" value="Sunday School">
+        <label for="sundaySchool">Sunday School</label>
+
+        <input type="checkbox" id="mediaTeam" name="service" value="Media Team">
+        <label for="mediaTeam">Media Team</label>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+   
+    <p id="resultMessage"></p>
+
+    <script src="proj2.js"></script>
 </body>

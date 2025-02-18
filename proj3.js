@@ -86,3 +86,45 @@ function renderTodayAttendance() {
   }
   todayAttendanceDiv.appendChild(ul);
 }
+
+/* Use a switch statement to display a greeting based on today's day of the week.*/
+function displayDayMessage() {
+  const now = new Date();
+  const day = now.getDay(); // 0: Sunday, 1: Monday, ..., 6: Saturday
+  let dayMessage = "";
+
+  switch(day) {
+    case 0:
+      dayMessage = "Today is Sunday. Have a blessed service!";
+      break;
+    case 1:
+      dayMessage = "It's Monday. Start your week with energy!";
+      break;
+    case 2:
+      dayMessage = "It's Tuesday. Trust in the Lord's guidance.";
+      break;
+    case 3:
+      dayMessage = "It's Wednesday. Keep your faith strong.";
+      break;
+    case 4:
+      dayMessage = "It's Thursday. Remember to be thankful.";
+      break;
+    case 5:
+      dayMessage = "It's Friday. Prepare well for the weekend.";
+      break;
+    case 6:
+      dayMessage = "It's Saturday. Rest and get ready for tomorrow.";
+      break;
+    default:
+      dayMessage = "Have a great day!";
+  }
+  console.log(dayMessage);
+}
+
+/* Format a Date object into a YYYY-MM-DD string.*/
+function formatDate(dateObj) {
+  const year = dateObj.getFullYear();
+  const month = String(dateObj.getMonth() + 1).padStart(2, "0");
+  const day = String(dateObj.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}

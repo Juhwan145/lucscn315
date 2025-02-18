@@ -27,10 +27,25 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // Calculate birth year
-        const birthYear = new Date().getFullYear() - age;
-        const serviceMessage = serviceAreas.length > 0 
-            ? `Ministries you’d like to serve in: ${serviceAreas.join(", ")}` 
-            : "You have not selected any ministry preferences.";
+        function calculateBirthYear(age) {
+            const currentYear = new Date().getFullYear();
+            return currentYear - age;
+          }
+        function getServiceMessage(serviceAreas) {
+            return serviceAreas.length > 0
+              ? `Ministries you'd like to serve in: ${serviceAreas.join(", ")}`
+              : "You have not selected any ministry preferences.";
+          }
+
+        // Use the function to calculate the birth year
+const birthYear = calculateBirthYear(age);
+
+// Generate a service message
+const serviceMessage = getServiceMessage(serviceAreas);
+
+// Log the results
+console.log(`Birth Year: ${birthYear}`);
+console.log(serviceMessage);
 
         // Display results
         resultMessage.innerHTML = `

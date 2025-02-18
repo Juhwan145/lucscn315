@@ -7,11 +7,10 @@
     --text-color: #333;
 }
 
+/* Style the header */
 body {
     background-color: #FCFCEA;
 }
-
-/* Style the header */
 .header {
     display: flex;
     align-items: center;
@@ -57,6 +56,46 @@ body {
     color: var(--text-color);
     border-radius: 10px;
 }
+
+#form-container {
+    h2 {
+        text-align: center;
+        font-size: 1.8em;
+    }
+    max-width: 500px;      
+    margin: 2rem auto;  
+    padding: 1rem;
+    border: 1px solid var(--lessaccent-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+#checkInForm {
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        font-size: 0.8em;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif
+    }
+    border: 1px solid var(--lessaccent-color);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 30px;
+  }
+
+.attendance-container {
+    margin: 20px 0;
+    padding: 15px;
+    background: var(--background-color);
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+
 
 /* Color Palette
 #F0EAD2

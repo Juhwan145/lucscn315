@@ -6,6 +6,8 @@
     <title>701 Korean Church</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="proj2.js"></script>
+    <script src="proj3.js"></script>
 </head>
 <body style="background-color:rgb(252, 252, 234)">
     <div class="header">
@@ -17,9 +19,27 @@
             <a href="giving.html">GIVING</a>
         </nav>
     </div>
+  
+  <!-- Attendance Check Form with today's attendance record -->
+  <form id="checkInForm">
+    <h1>Sunday Attendance Check System</h1>
+    <h2>Check in by entering your name (only available on Sundays).</h2>
+    <label for="memberName">Name:</label>
+    <input type="text" id="memberName" placeholder="Enter your name" required>
+    <button type="submit">Check In</button>
+    
+    <!-- Container for today's (Sunday) attendance list -->
+    <div class="attendance-container">
+      <h3>Today's Attendance</h3>
+      <div id="todayAttendance">
+        <p>No attendance recorded yet.</p>
+      </div>
+    </div>
+  </form>
 
-    <h2>Church Registration Form</h2>
-    <form id="churchForm">
+    <div id="form-container">
+      <h2>Church Registration Form</h2>
+      <form id="churchForm">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         <br><br>
@@ -57,10 +77,9 @@
         <br><br>
 
         <button type="submit">Submit</button>
-    </form>
 
+        <p id="resultMessage"></p>
+      </form>
+    </div>
    
-    <p id="resultMessage"></p>
-
-    <script src="proj2.js"></script>
 </body>

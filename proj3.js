@@ -1,4 +1,4 @@
-// Global array to store attendance records (each record is an object with date and members)
+// Retrieve attendance records from localStorage to ensure data persists across page reloads.
 let attendanceRecords = JSON.parse(localStorage.getItem("attendanceRecords")) || [];
 
 // When the DOM is loaded, bind form events and update the display
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderTodayAttendance();
   displayDayMessage();
 });
-
+        
 /* Handle check-in when a user submits their name.*/
 function handleCheckIn(event) {
   event.preventDefault(); // Prevent page reload on form submission
@@ -21,6 +21,9 @@ function handleCheckIn(event) {
   // Validate name input
   if (!memberName) {
     alert("Please enter your name.");
+    return;
+  } else if (memberName.length < 3) {
+    alert("Name must be at least 3 characters.");
     return;
   }
 
@@ -66,7 +69,7 @@ function renderTodayAttendance() {
 
   // If today is not Sunday, display a message
   if (now.getDay() !== 0) {
-    todayAttendanceDiv.innerHTML = "<p>Today is not Sunday.</p>";
+    todayAttendanceDiv.innerHTML = "<p>We're not checking attendance today.</p>";
     return;
   }
 
@@ -93,4 +96,39 @@ function formatDate(dateObj) {
   const month = String(dateObj.getMonth() + 1).padStart(2, "0");
   const day = String(dateObj.getDate()).padStart(2, "0");
   return `${year}-${month}-${day}`;
+}
+
+/* Display a message based on the current day using a switch statement. */
+function displayDayMessage() {
+  const dayMessageDiv = document.getElementById("dayMessage");
+  const now = new Date();
+  let message = "";
+
+  switch (now.getDay()) {
+    case 0:
+      message = "Happy Sunday! Time for the attendance check.";
+      break;
+    case 1:
+      message = "It's Monday. Let's start the week strong!";
+      break;
+    case 2:
+      message = "It's Tuesday. Keep pushing forward!";
+      break;
+    case 3:
+      message = "It's Wednesday. Midweek hustle!";
+      break;
+    case 4:
+      message = "It's Thursday. Almost there!";
+      break;
+    case 5:
+      message = "It's Friday. Enjoy the start of the weekend!";
+      break;
+    case 6:
+      message = "It's Saturday. Relax and recharge!";
+      break;
+    default:
+      message = "Have a great day!";
+  }
+
+  dayMessageDiv.textContent = message;
 }

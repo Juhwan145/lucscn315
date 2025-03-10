@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="proj5.js"></script>
+    <script src="proj6.js"></script>
+
 </head>
 <body style="background-color:rgb(252, 252, 234)">
     <div class="header">
@@ -18,7 +20,48 @@
             <a class="active" href="giving.html">GIVING</a>
         </nav>
     </div>
-
+    <div class="givingwrapper">
+        <div class="givingContainer">
+            <h2>Register Form</h2>
+            <form name="registrationForm" class="givingForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" name="fullName" required>
+                <span id="fullNameError" class="givingErrorMessage"></span>
+    
+                <label for="username">Username:</label>
+                <input type="text" name="username" required>
+                <span id="usernameError" class="givingErrorMessage"></span>
+    
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+                <span id="emailError" class="givingErrorMessage"></span>
+    
+                <label for="password">Password:</label>
+                <input type="password" name="password" required>
+                <span id="passwordError" class="givingErrorMessage"></span>
+    
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" name="confirmPassword" required>
+                <span id="confirmPasswordError" class="givingErrorMessage"></span>
+    
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" name="phoneNumber" required>
+                <span id="phoneNumberError" class="givingErrorMessage"></span>
+    
+                <label for="dob">Date of Birth:</label>
+                <input type="date" name="dob" required>
+                <span id="dobError" class="givingErrorMessage"></span>
+    
+                <label>
+                    <input type="checkbox" name="agreeToTerms"> I agree to the terms and conditions
+                </label>
+                <span id="agreeToTermsError" class="givingErrorMessage"></span>
+    
+                <button type="submit">Register</button>
+                <span id="generalError" class="givingErrorMessage"></span>
+            </form>
+        </div>
+    </div>
     <img src = "images/photo2.jpg" class="givingimg">
 
 </body>

@@ -2,18 +2,16 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     const imgFiles = [
-        "images/photo01.jpg", "images/photo02.jpg", "images/photo03.jpg", "images/photo04.jpg",
-        "images/photo05.jpg", "images/photo06.jpg", "images/photo07.jpg", "images/photo08.jpg",
-        "images/photo09.jpg", "images/photo10.jpg", "images/photo11.jpg", "images/photo12.jpg"
+        "images/photo1.jpg", "images/photo2.jpg", "images/photo3.jpg", "images/photo4.jpg", "images/photo5.jpg"
     ];
 
     const imgCaptions = [
-        "Sky Pond (Rocky Mountain National Park)", "Buffalo on the Plains (South Dakota)", 
-        "Garden of the Gods (Colorado Springs)", "Elephant Head Wild Flower (Rocky Mountain National Park)",
-        "Double Rainbow (Colorado National Monument)", "Moose in the Wild (Grand Lake, Colorado)",
-        "Camas Wild Flower (Rocky Mountain National Park)", "Chasm Lake (Rocky Mountain National Park)",
-        "Teton Crest Trail (Grand Teton National Park)", "The Notch Trail (Badlands National Park)",
-        "Sprague Lake (Rocky Mountain National Park)", "Longs Peak Trail (Rocky Mountain National Park)"
+        "701 Korean Church", 
+        "Sunday Service",
+        "Outdoor Worship",
+        "College",
+        "College",
+
     ];
 
     let imgCount = imgFiles.length;
@@ -29,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     imgFiles.forEach((src, index) => {
         let img = document.createElement("img");
         img.src = src;
-        img.alt = imgCaptions[index];
+        img.alt = imgCaptions ? imgCaptions[index] : "";
         img.addEventListener("click", createOverlay);
         lbImages.appendChild(img);
     });

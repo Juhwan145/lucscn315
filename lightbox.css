@@ -127,7 +127,7 @@ div#lightbox {
     margin-right: 13px;
     filter: opacity(0.8);
     cursor: pointer;
-    outline: 2px solid #a18cf7;
+    outline: 2px solid (--primary-color);
     box-shadow: 3px 3px 10px black;  
     user-select: none;   
  }
@@ -151,7 +151,7 @@ div#lightbox {
     height: 100%;                           /* Full height */
     top: 0;
     left: 0;
-    background-color: rgba(104,49,0,0.85);  /* Semitransparent brown background */
+    background-color: (--background-color);  /* Semitransparent brown background */
     display: flex;
     justify-content: center;
     align-items: center;

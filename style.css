@@ -189,10 +189,18 @@ body {
 
 .aboutimg {
     width: 800px;
+    justify-content: center;
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .givingimg {
+    margin-top: 40px;
     width: 700px;
+    display: block;
+    margin: 0 auto;
 }
 
 .involveimg {
@@ -200,6 +208,78 @@ body {
     margin: 0 auto;
     max-width: 700px;
 }
+
+.givingWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding-top: 50px; /* 상단 여백 추가 */
+}
+
+.givingContainer {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px; /* 폼 크기 조정 */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px; /* 폼과 이미지 간격 추가 */
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.givingForm {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.givingForm label {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.givingForm input[type="text"],
+.givingForm input[type="email"],
+.givingForm input[type="password"],
+.givingForm input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.givingForm button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.givingForm button:hover {
+    background: #218838;
+}
+
+.givingErrorMessage {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
 
 /* Color Palette
 #F0EAD2

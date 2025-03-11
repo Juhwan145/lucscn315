@@ -6,7 +6,7 @@
     <title>701 Korean Church</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <script src="proj2.js"></script>
+    <script src="proj7.js"></script>
     <script src="proj3.js"></script>
 </head>
 <body style="background-color:rgb(252, 252, 234)">
@@ -38,9 +38,9 @@
     </div>
   </form>
 
-    <div id="form-container">
-      <h2>Church Registration Form</h2>
-      <form id="churchForm">
+  <div id="form-container">
+    <h2>Church Registration Form</h2>
+    <form id="churchForm">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         <br><br>
@@ -66,7 +66,7 @@
         <label>Would you like to serve in a ministry? (Select all that apply)</label><br>
         <input type="checkbox" id="worshipTeam" name="service" value="Worship Team">
         <label for="worshipTeam">Worship Team</label>
-        
+
         <input type="checkbox" id="welcomeTeam" name="service" value="Welcome Team">
         <label for="welcomeTeam">Welcome Team</label>
 
@@ -77,12 +77,23 @@
         <label for="mediaTeam">Media Team</label>
         <br><br>
 
+        <!-- Insert prayer request -->
+        <label for="prayerRequest">Enter Your Prayer Request:</label><br>
+        <textarea id="prayerRequest" placeholder="Enter your prayer request (at least 10 characters)" required></textarea>
+        <p id="prayerError" style="color: red;"></p>
+    
+
+        <!--Upload file-->>
+        <label for="profilePicture">Upload Your Profile Picture:</label>
+        <input type="file" id="profilePicture" accept="image/*">
+        <br><br>
+
         <button type="submit">Submit</button>
 
         <p id="resultMessage"></p>
-      </form>
-
+        <img id="uploadedImage" style="display: none; max-width: 200px; border-radius: 10px;" alt="Uploaded Profile Picture">
+    </form>
     </div>
-    <img src = "photo4.jpg" class="involveimg">
+    <img src = "images/photo4.jpg" class="involveimg">
    
 </body>

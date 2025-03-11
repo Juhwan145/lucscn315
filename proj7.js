@@ -58,14 +58,14 @@ document.addEventListener("DOMContentLoaded", () => {
         // Generate a service message
         const serviceMessage = generateServiceList(serviceAreas);
 
-        // Display results (🔄 수정된 부분: Ministry는 <ul>, Prayer Request는 텍스트 출력)
+        // Display results
         resultMessage.innerHTML = `
             Hello, <strong>${name}</strong>!<br>
             You are <strong>${age}</strong> years old (${sex}), likely born in <strong>${birthYear}</strong>.<br>
             Church attendance: <strong>${churchAttend}</strong><br>
             Ministries you'd like to serve in:<br>
             ${serviceMessage}
-            <strong>Prayer Request:</strong> ${prayerRequest}<br>
+            <strong>Prayer Request:</strong> "${prayerRequest}"<br>
             ${generateMessage(name)}
         `;
 
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Generate a personalized welcome message (🔄 원래 코드 유지!)
+    // Generate a personalized welcome message
     function generateMessage(name) {
         const messages = [
             `May God bless ${name} in their journey of faith!`,

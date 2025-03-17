@@ -41,13 +41,17 @@
   <div id="form-container">
     <h2>Church Registration Form</h2>
     <form id="churchForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <br><br>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" pattern="[a-zA-Z\s]+" required>
+      <p id="nameError" style="color: red;"></p>
 
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age" required>
-        <br><br>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" pattern="[1-9][0-9]*" required>
+      <p id="ageError" style="color: red;"></p>
+
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="text" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10,}" required>
+      <p id="phoneError" style="color: red;"></p>
 
         <label>Sex:</label>
         <input type="radio" id="male" name="sex" value="Male" required>
@@ -83,8 +87,8 @@
         <p id="prayerError" style="color: red;"></p>
     
 
-        <!--Upload file-->>
-        <label for="profilePicture">Upload Your Profile Picture:</label>
+        <!--Upload file-->
+        <label for="profilePicture">Upload Your Profile Picture:<br></label>
         <input type="file" id="profilePicture" accept="image/*">
         <br><br>
 

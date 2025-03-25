@@ -280,6 +280,31 @@ body {
     display: none;
 }
 
+#taskSection {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#taskSection h1 {
+    font-family: 'Georgia', serif;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.task-box {
+    background-color: white;
+    border: 1px solid none;
+    border-radius: 12px;
+    padding: 20px;
+    width: 60%;
+    margin: 0 auto;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 18px;
+    color: #444;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
 
 /* Color Palette
 #F0EAD2

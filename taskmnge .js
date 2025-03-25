@@ -1,4 +1,4 @@
-import { Task } from './objects.js'; // Import the Task class
+import { Task } from 'objects.js'; // Import the Task class
 
 // Creating an instance of Task using the `new` keyword
 // Example task for Sunday Worship Setup

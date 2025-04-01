@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>701 Korean Church</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="proj9.js"></script>
+    <script src="script.js" defer></script>
 </head>
-<body style="background-color:rgb(252, 252, 234)">
+<body>
     <div class="header">
-        <a href="index.html" class="logo"><img src="logo.png"></a> 
+        <a href="index.html" class="logo"><img src="logo.png" alt="Church Logo"></a> 
         <nav class="right-header">
             <a href="about.html">ABOUT US</a>
             <a href="involve.html">INVOLVE US</a>
@@ -19,8 +20,36 @@
     </div>
 
     <h2 id="welcome-text">Welcome to 701 Korean Church!</h2>
-    <img src = "photo1.jpg" class = "indeximg">
+    <img src="images/photo1.jpg" class="indeximg" alt="Church Image">
     <br>
     <button onclick="changeText()">Click Me</button>
-    
+
+    <!-- Customization Form -->
+    <div class="form-container">
+        <h3>Customize This Page</h3>
+        <form id="customizationForm">
+            <label>
+                Background Color:
+                <input type="color" name="backgroundColor" />
+            </label><br><br>
+
+            <label>
+                Text Color:
+                <input type="color" name="textColor" />
+            </label><br><br>
+
+            <label>
+                Font Size:
+                <select name="fontSize">
+                    <option value="14px">Small</option>
+                    <option value="16px" selected>Medium</option>
+                    <option value="20px">Large</option>
+                </select>
+            </label><br><br>
+
+            <button type="submit">Apply</button>
+            <button id="resetBtn" type="button">Reset to Default</button>
+        </form>
+    </div>
 </body>
+</html>

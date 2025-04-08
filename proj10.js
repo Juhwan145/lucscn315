@@ -1,5 +1,6 @@
 const container = document.getElementById("puzzle-container");
 const timerEl = document.getElementById("timer");
+const startBtn = document.getElementById("startBtn");
 const resetBtn = document.getElementById("resetBtn");
 const successMessage = document.getElementById("success-message");
 
@@ -116,5 +117,6 @@ function resetGame() {
   startTimer();
 }
 
+startBtn.addEventListener("click", resetGame);
 resetBtn.addEventListener("click", resetGame);
-window.onload = resetGame;
+

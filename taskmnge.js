@@ -14,3 +14,4 @@ task1.updateDescription("Slides for Sunday + Pastor's sermon points");
 // Display task info on the page
 const displayDiv = document.getElementById("taskDisplay");
 displayDiv.innerText = task1.displayTask();
+

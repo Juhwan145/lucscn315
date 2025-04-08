@@ -1,4 +1,4 @@
-// Task class to manage church-related tasks
+// Task class to manage church-related tasks (e.g., worship team prep, event setup)
 export class Task {
     // Constructor to initialize task details
     constructor(title, description, dueDate) {

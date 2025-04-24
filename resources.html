@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>701 Korean Church</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="lightbox.css">
-    <script src="proj5.js" defer></script>
-    <script type="module" src="taskmnge.js"></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>701 Korean Church</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="lightbox.css" />
+  <script src="proj3.js" defer></script>
 </head>
-<body style="background-color:rgb(252, 252, 234)">
-    <div class="header">
-        <a href="index.html" class="logo"><img src="images/logo.png"></a> 
-        <nav class="right-header">
-            <a href="about.html">ABOUT US</a>
-            <a href="involve.html">INVOLVE US</a>
-            <a class="active" href="resources.html">RESOURCES</a>
-            <a href="giving.html">GIVING</a>
-        </nav>
-    </div>
+<body style="background-color: rgb(252, 252, 234)">
+  <div class="header">
+    <a href="index.html" class="logo"><img src="images/logo.png" /></a>
+    <nav class="right-header">
+      <a href="about.html">ABOUT US</a>
+      <a href="involve.html">INVOLVE US</a>
+      <a class="active" href="resources.html">RESOURCES</a>
+      <a href="giving.html">GIVING</a>
+    </nav>
+  </div>
 
-    <article>
-        <div id="lightbox">
-            <h1 id="lbTitle">Our Communities</h1>
-            <div id="lbPrev"><</div>
-            <div id="lbNext">></div>
-            <div id="lbPlay">&#9199;</div>
-            <div id="lbImages"></div>
-        </div>
-     </article>
+  <section class="events-announcement">
+    <h2>Church News & Events</h2>
+    <div class="event-box">
+      <p><strong>Good Friday Service</strong> — April 18 @ 7:00PM in the main sanctuary</p>
+      <p><strong>Fellowship Lunch</strong> — Every 1st Sunday after worship in the gym</p>
+      <p><strong>Summer Retreat Registration</strong> — Opens May 1st (link will be shared)</p>
+    </div>
+  </section>
+
+  <section class="attendance-section">
+    <div class="underline"></div>
+
+    <div class="attendance-form">
+      <h2>Sunday Attendance Check System</h2>
+      <p>Check in by entering your name (only available on Sundays).</p>
+      <form>
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="Enter your name" />
+        <button type="submit">Check In</button>
+      </form>
+    </div>
+  
+    <!-- Graph -->
+    <div class="attendance-chart">
+      <h3>Weekly Attendance</h3>
+      <canvas id="attendanceChart" width="300" height="200"></canvas>
+    </div>
+  </section>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js"></script>
+  </section>
 </body>
 
-<!-- Church Volunteer Task Manager -->
-<section id="taskSection">
-    <h1>Church Volunteer Task Manager</h1>
-    <div id="taskDisplay" class="task-box"></div>
-  </section>
+<footer class="site-footer">
+  <p>&copy; 2025 701 Korean Church | All Rights Reserved</p>
+  <p>Contact: 701church@gmail.com | 434-321-8811</p>
+</footer>
+</html>

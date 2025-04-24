@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>701 Korean Church</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
     <script src="proj9.js"></script>
     <script src="script.js" defer></script>
+    <script src="proj5.js" defer></script>
 </head>
 <body>
     <div class="header">
@@ -19,37 +21,36 @@
         </nav>
     </div>
 
-    <h2 id="welcome-text">Welcome to 701 Korean Church!</h2>
-    <img src="images/photo1.jpg" class="indeximg" alt="Church Image">
-    <br>
-    <button onclick="changeText()">Click Me</button>
-
-    <!-- Customization Form -->
-    <div class="form-container">
-        <h3>Customize This Page</h3>
-        <form id="customizationForm">
-            <label>
-                Background Color:
-                <input type="color" name="backgroundColor" />
-            </label><br><br>
-
-            <label>
-                Text Color:
-                <input type="color" name="textColor" />
-            </label><br><br>
-
-            <label>
-                Font Size:
-                <select name="fontSize">
-                    <option value="14px">Small</option>
-                    <option value="16px" selected>Medium</option>
-                    <option value="20px">Large</option>
-                </select>
-            </label><br><br>
-
-            <button type="submit">Apply</button>
-            <button id="resetBtn" type="button">Reset to Default</button>
-        </form>
+ <!-- Hero Section -->
+ <section class="hero">
+    <div class="hero-text">
+      <h1>To bring unity to all things in heaven and on earth under Christ</h1>
     </div>
+  </section>
+
+  <article>
+    <div id="lightbox">
+        <h1 id="lbTitle">Our Communities</h1>
+        <div id="lbPrev"><</div>
+        <div id="lbNext">></div>
+        <div id="lbPlay">&#9199;</div>
+        <div id="lbImages"></div>
+    </div>
+ </article>
+
+  <!-- Google Map -->
+  <section class="map-section">
+    <h2>Our Location</h2>
+    <p>114 Perrymont Ave, Lynchburg, VA 24502</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.9075545491114!2d-79.19345021803063!3d37.39201846215474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b2da1c9b539fef%3A0x1aa5d5b55dd2dfa2!2s701%20Korean%20Church%20%2F%20Lynchburg%2C%20VA!5e0!3m2!1sko!2sus!4v1745294988733!5m2!1sko!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 701 Korean Church | All Rights Reserved</p>
+    <p>Contact: 701church@gmail.com | 434-321-8811</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

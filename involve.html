@@ -8,6 +8,8 @@
     <script src="script.js"></script>
     <script src="proj7.js"></script>
     <script src="proj3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.js"></script>
 </head>
 <body style="background-color:rgb(252, 252, 234)">
     <div class="header">
@@ -20,36 +22,68 @@
         </nav>
     </div>
   
-  <!-- Attendance Check Form with today's attendance record -->
-  <form id="checkInForm">
-    <h1>Sunday Attendance Check System</h1>
-    <h2>Check in by entering your name (only available on Sundays).</h2>
-    <label for="memberName">Name:</label>
-    <input type="text" id="memberName" placeholder="Enter your name" required>
-    <button type="submit">Check In</button>
-    
-    <!-- Container for today's (Sunday) attendance list -->
-    <div class="attendance-container">
-      <h3>Today's Attendance</h3>
-      <div id="dayMessage"></div>
-      <div id="todayAttendance">
-        <p>No attendance recorded yet.</p>
-      </div>
-    </div>
-  </form>
+    <main class="involve-page">
 
-  <div id="form-container">
+      <section class="departments">
+        <h1>Our Ministry Teams</h1>
+  
+        <div class="department-list">
+          <div class="dept">
+            <img src="images/team1.jpg" alt="Korea School">
+            <h3>Korea School</h3>
+            <p>As children grow up in the U.S., this school helps them to maintain their identity as Koreans, steadily learning their native language and writing skills. Through this, they develop the gift of bilingualism and grow as disciples of Jesus Christ, becoming precious workers for God’s kingdom.</p>
+          </div>
+          <div class="dept">
+            <img src="images/team2.jpg" alt="Sunday School">
+            <h3>VISCAT(Sunday School)</h3>
+            <p>Children who take vision!
+              From toddlers to elementary students,
+              we help them grow in faith by learning God's Word
+              so they can mature within God's vision.</p>
+          </div>
+          <div class="dept">
+            <img src="images/team3.jpg" alt="Youth">
+            <h3>SALTEEN(Youth)</h3>
+            <p>“The future champions for Christ” ​
+              Our youth group is a worship ​
+              gathering to love God and to
+              serve ​others.</p>
+          </div>
+          <div class="dept">
+            <img src="images/team4.jpg" alt="College">
+            <h3>GIL(College)</h3>
+            <p>A healthy community growing together with young adults and college students through the love of God!
+              In the vibrant season of youth, we experience God's love, share it with one another, and spread it to the world.</p>
+          </div>
+          <div class="dept">
+            <img src="images/team5.jpg" alt="Adult">
+            <h3>Small Grough(Adult)</h3>
+            <p>A gathering of believers who live as Christ-like disciples, full of love and service,
+              growing as mature members of the church!
+              Through worship and small group fellowship,
+              we share our faith and daily lives,
+              working together to expand the Kingdom of God.</p>
+          </div>
+        </div>
+      </section>
+
+      <button id="toggleFormBtn">Show/Hide Ministry List</button>
+
+  
+      <div class="underline"></div>
+
+  <div class="form-container">
     <h2>Church Registration Form</h2>
-    <form id="churchForm">
-      <label for="name">Name:</label>
+    <form class="churchForm">
+      <label for="name">Name</label>
       <input type="text" id="name" name="name" pattern="[a-zA-Z\s]+" required>
       <p id="nameError" style="color: red;"></p>
 
-      <label for="age">Age:</label>
+      <label for="age">Age</label>
       <input type="number" id="age" name="age" pattern="[1-9][0-9]*" required>
       <p id="ageError" style="color: red;"></p>
 
-      <label for="phoneNumber">Phone Number:</label>
+      <label for="phoneNumber">Phone Number</label>
       <input type="text" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10,}" required>
       <p id="phoneError" style="color: red;"></p>
 
@@ -67,28 +101,19 @@
         <label for="churchNo">No</label>
         <br><br>
 
-        <label>Would you like to serve in a ministry? (Select all that apply)</label><br>
-        <input type="checkbox" id="worshipTeam" name="service" value="Worship Team">
-        <label for="worshipTeam">Worship Team</label>
-
-        <input type="checkbox" id="welcomeTeam" name="service" value="Welcome Team">
-        <label for="welcomeTeam">Welcome Team</label>
-
-        <input type="checkbox" id="sundaySchool" name="service" value="Sunday School">
-        <label for="sundaySchool">Sunday School</label>
-
-        <input type="checkbox" id="mediaTeam" name="service" value="Media Team">
-        <label for="mediaTeam">Media Team</label>
+        <label>Would you like to serve in a ministry?</label><br>
+        <input type="text" id="ministry" placeholder="e.g. Worship Team, Sunday School" required>
+        <div id="ministrySuggestions" class="autocomplete-box"></div>
         <br><br>
 
         <!-- Insert prayer request -->
-        <label for="prayerRequest">Enter Your Prayer Request:</label><br>
-        <textarea id="prayerRequest" placeholder="Enter your prayer request (at least 10 characters)" required></textarea>
+        <label for="prayerRequest">Enter Your Prayer Request</label><br>
+        <input type="text" id="prayerRequest" placeholder="At least 10 characters" required>
         <p id="prayerError" style="color: red;"></p>
     
 
         <!--Upload file-->
-        <label for="profilePicture">Upload Your Profile Picture:<br></label>
+        <label for="profilePicture">Upload Your Profile Picture<br></label>
         <input type="file" id="profilePicture" accept="image/*">
         <br><br>
 
@@ -97,7 +122,10 @@
         <p id="resultMessage"></p>
         <img id="uploadedImage" style="display: none; max-width: 200px; border-radius: 10px;" alt="Uploaded Profile Picture">
     </form>
-    </div>
-    <img src = "images/photo4.jpg" class="involveimg">
+  </div>
    
+  <footer class="site-footer">
+    <p>&copy; 2025 701 Korean Church | All Rights Reserved</p>
+    <p>Contact: 701church@gmail.com | 434-321-8811</p>
+  </footer>
 </body>

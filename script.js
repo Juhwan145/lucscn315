@@ -16,3 +16,16 @@ function changeText() {
     // Show an alert
     alert("You clicked the button! The text has changed.");
 }
+
+$(document).ready(function () {
+    let index = 0;
+    const slides = $('.slide');
+    function showSlide() {
+      slides.hide();
+      index = (index + 1) % slides.length;
+      slides.eq(index).fadeIn(1000);
+    }
+    showSlide();
+    setInterval(showSlide, 3000);
+  });
+  

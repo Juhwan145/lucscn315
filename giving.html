@@ -10,7 +10,6 @@
     <script src="proj6.js"></script>
 
 </head>
-<body style="background-color:rgb(252, 252, 234)">
     <div class="header">
         <a href="index.html" class="logo"><img src="images/logo.png"></a> 
         <nav class="right-header">
@@ -21,48 +20,40 @@
         </nav>
     </div>
 
-    <div class="givingwrapper">
-        <div class="givingContainer">
-            <h2>Register Form</h2>
-            <form name="registrationForm" class="givingForm">
-                <label for="fullName">Full Name:</label>
-                <input type="text" name="fullName" required>
-                <span id="fullNameError" class="givingErrorMessage"></span>
+    <main class="giving-page">
+
+      <section class="giving-verse">
+          <h1>Giving with a Grateful Heart</h1>
+          <p>"Each of you should give what you have decided in your heart to give, 
+          not reluctantly or under compulsion, for God loves a cheerful giver." <br>
+          <strong>– 2 Corinthians 9:7</strong></p>
+        </section>
     
-                <label for="username">Username:</label>
-                <input type="text" name="username" required>
-                <span id="usernameError" class="givingErrorMessage"></span>
+        <section class="giving-info">
+          <h2>Online Giving</h2>
+          <img src="images/givinglogo.png" class="giving-image">
+          <p><strong>Zelle Email:</strong> <code>701giving@gmail.com</code></p>
+          <div class="underline"></div>
+        </section>
     
-                <label for="email">Email:</label>
-                <input type="email" name="email" required>
-                <span id="emailError" class="givingErrorMessage"></span>
+        <section class="giving-qr">
+          <h2>Scan QR Code</h2>
+          <p>You can also scan the QR code to give:</p>
+          <img src="images/qrcode.jpg" alt="QR Code for Giving" class="qr-image">
+          <div class="underline"></div>
+        </section>
     
-                <label for="password">Password:</label>
-                <input type="password" name="password" required>
-                <span id="passwordError" class="givingErrorMessage"></span>
+        <section class="giving-box">
+          <h2>In-Person Giving</h2>
+          <p>You can drop off your offerings in the giving box at the entrance of the church building.</p>
+        </section>
     
-                <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" name="confirmPassword" required>
-                <span id="confirmPasswordError" class="givingErrorMessage"></span>
+      </main>
     
-                <label for="phoneNumber">Phone Number:</label>
-                <input type="text" name="phoneNumber" required>
-                <span id="phoneNumberError" class="givingErrorMessage"></span>
-    
-                <label for="dob">Date of Birth:</label>
-                <input type="date" name="dob" required>
-                <span id="dobError" class="givingErrorMessage"></span>
-    
-                <label>
-                    <input type="checkbox" name="agreeToTerms"> I agree to the terms and conditions
-                </label>
-                <span id="agreeToTermsError" class="givingErrorMessage"></span>
-    
-                <button type="submit">Register</button>
-                <span id="generalError" class="givingErrorMessage"></span>
-            </form>
-        </div>
-    </div>
-    <img src = "images/photo2.jpg" class="givingimg">
+      <footer class="site-footer">
+        <p>&copy; 2025 701 Korean Church | All Rights Reserved</p>
+        <p>Contact: 701church@gmail.com | 434-321-8811</p>
+      </footer>
 
 </body>
+</html>

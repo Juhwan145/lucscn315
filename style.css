@@ -11,11 +11,16 @@
 body {
     background-color: #FCFCEA;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: -7px;
     padding: 15px 100px;
     height: 60px;
     border-bottom: 2px solid var(--primary-color);
@@ -57,6 +62,14 @@ body {
     border-radius: 10px;
 }
 
+ /* Footer */
+ .site-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+
 #form-container {
     h2 {
         text-align: center;
@@ -68,6 +81,7 @@ body {
     border: 1px solid var(--lessaccent-color);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 70px;
   }
 
 #checkInForm {
@@ -368,6 +382,397 @@ button {
     border: 1px solid #aaa;
     background-color: #fff;
   }  
+  
+
+
+
+
+
+  /* Hero Section */
+.hero {
+    background-image: url('images/photo1.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2px;
+  }
+  
+  .hero-text h1 {
+    color: white;
+    font-size: 2.8rem;
+    background: rgba(0,0,0,0.5);
+    padding: 20px 30px;
+    border-radius: 10px;
+  }
+  
+  /* Map Section */
+  .map-section {
+    padding: 10px 40px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .map-section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .map-section p {
+    font-size: 1.2em;
+  }
+
+  .underline {
+    border-bottom: 2px solid var(--primary-color); 
+    width: 1400px;        
+    margin: 20px auto 0; 
+  }
+
+  .giving-page {
+    background-color: #FCFCEA;
+    text-align: center;
+  }
+
+  .giving-page h1 {
+    font-family: 'Georgia', serif;
+    color: white;
+  }
+  
+  .giving-page h2 {
+    font-family: 'Georgia', serif;
+    color: #3a3a3a;
+  }
+  
+  .giving-verse {
+    background-image: url('images/giving-bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    margin-top: -1px;
+
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .giving-verse::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 0;
+  }
+  
+  .giving-verse h1,
+  .giving-verse p {
+    position: relative;
+    z-index: 1; 
+  }
+  
+  .giving-verse p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-top: 20px;
+  }
+  
+  .giving-info, .giving-qr, .giving-box {
+    margin-top: 50px;
+  }
+
+  .giving-info p {
+    font-size: 1.3em;
+    margin-bottom: 45px;
+  }
+
+  .giving-image {
+    width: 200px;
+    margin: -20px;
+  }
+  
+  .giving-qr p{
+    font-size: 1.2em;
+  }
+
+  .qr-image {
+    width: 280px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #ADC178;
+    border-radius: 8px;
+  }
+
+  .giving-box p{
+    font-size: 1.2em;
+    margin-bottom: 60px;
+  }
+
+  .departments h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .department-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .dept {
+    width: 240px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .dept img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .events-announcement {
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+    margin-bottom: -10px;
+  }
+  
+  .events-announcement h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: -5px;
+  }
+  
+  .event-box p {
+    background-color: #ffffff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #444;
+  }
+
+  .attendance-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap; /* 반응형용 */
+    padding: 40px 20px;
+  }
+
+  .attendance-form{
+    margin-top: 70px;
+    padding: 30px;
+    border: 2px solid #A98467;
+    border-radius: 8px;
+  }
+
+  .attendance-form input{
+    padding: 9px;
+    border: 1.5px solid #ADC178;
+
+    border-radius: 8px;
+  }
+
+  .attendance-form button {
+    padding: 10px;
+    font-size: 0.8em;
+    background-color: white;
+    border: 1.5px solid #ADC178;
+    border-radius: 8px;
+  }
+
+  .attendance-section h2{
+    font-size: 1.8em;
+  }
+
+  .attendance-section h3{
+    text-align: center;
+  }
+
+  
+  .attendance-chart {
+    font-size: 1.3em;
+    width: 400px;
+  }
+
+  .department-list{
+    margin-bottom: 70px;
+  }
+
+  .form-container {
+    max-width: 700px;       
+    margin: 60px auto;    
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    h2{
+      text-align: center;
+    }
+  }
+
+  .churchForm label {
+    font-size: 1.2em;
+  }
+
+  .churchForm input[type="text"],
+  .churchForm input[type="number"],
+  .churchForm input[type="text"]{
+    width: 98%;
+    padding: 10px;
+    border: 1.2px solid #ADC178;
+    border-radius: 6px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.churchForm button, #toggleFormBtn {
+display: block;
+margin: 0 auto;
+font-size: 0.8em;
+background-color: white;
+border: 1.5px solid #ADC178;
+border-radius: 8px;
+}
+
+.churchForm button:hover {
+  background-color: #527867;
+}
+
+.autocomplete-box {
+  border: 1px solid #ccc;
+  max-width: 400px;
+  background-color: white;
+  position: relative;
+  z-index: 10;
+}
+
+
+.suggestion-item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+#ministrySuggestions:empty {
+  display: none;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+.welcome-section,
+.vision-section,
+.time-section {
+  max-width: 850px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 10px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Headings */
+.welcome-section h2,
+.vision-section h2,
+.time-section h2 {
+  text-align: center;
+  color: #2f3e46;
+  border-bottom: 2px solid #ADC178;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.welcome-section p,
+.vision-section p,
+.time-section p {
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+.welcome-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.welcome-header h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2f3e46;
+  margin-bottom: 10px;
+}
+
+.welcome-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.welcome-text {
+  flex: 1 1 60%;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.welcome-image {
+  flex: 1 1 35%;
+  text-align: center;
+}
+
+.welcome-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Tables */
+.time-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 0.95em;
+  background-color: #fafafa;
+  border: 1px solid #ADC178;
+}
+
+.time-section th,
+.time-section td {
+  padding: 14px 12px;
+  border: 1px solid #ADC178;
+  text-align: left;
+  vertical-align: top;
+}
+
+.time-section th {
+  background-color: #d0e792;
+  font-weight: 600;
+}
+
+.time-section tr:hover {
+  background-color: #f9f9f9;
+}
+
+.time-section .leader-email {
+  font-size: 0.95rem;
+  color: #555;
+}
 
 /* Color Palette
 #F0EAD2

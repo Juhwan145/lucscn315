@@ -6,7 +6,6 @@
   <title>701 Korean Church</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="lightbox.css" />
-  <script src="proj3.js" defer></script>
 </head>
 <body style="background-color: rgb(252, 252, 234)">
   <div class="header">
@@ -34,9 +33,9 @@
     <div class="attendance-form">
       <h2>Sunday Attendance Check System</h2>
       <p>Check in by entering your name (only available on Sundays).</p>
-      <form>
+      <form id = "checkInForm">
         <label for="name">Name: </label>
-        <input type="text" id="name" placeholder="Enter your name" />
+        <input type="text" id="memberName" placeholder="Enter your name" />
         <button type="submit">Check In</button>
       </form>
     </div>
@@ -50,6 +49,7 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="final.js"></script>
+    <script src="proj3.js" defer></script>
   </section>
 </body>
 

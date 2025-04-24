@@ -66,10 +66,4 @@ function renderTodayAttendance() {
 
   const now = new Date();
   const todayString = formatDate(now);
-
-  // If today is not Sunday, display a message
-  if (now.getDay() !== 0) {
-    todayAttendanceDiv.innerHTML = "<p>We're not checking attendance today.</p>";
-    return;
-  }
 }
